@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Socket IO Example</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <ul id="message"></ul>
+    <div id="text"></div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+        socket.on('time', function (data) {
+            console.log(data);
+            console.log(data.time);
+            var parent = document.getElementById('message');
+            var elem = document.createElement('li');
+            elem.innerText = data.time;
+            parent.appendChild(elem);
+        });
+        socket.on('message', function (data) {
+            console.log(data);
+            console.log(data.msg);
+            var parent = document.getElementById('text');
+            var elem = document.createElement('p');
+            elem.innerText = data.msg;
+            parent.appendChild(elem);
+        });
+    </script>
+</body>
+</html>

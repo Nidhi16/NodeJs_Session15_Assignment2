@@ -1,0 +1,23 @@
+{
+  "name": "node-socket-example2",
+  "version": "1.0.0",
+  "description": "This is acadgild assignment to test socket",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nidhi16/NodeJs_Session15_Assignment2.git"
+  },
+  "author": "Nidhi Sinha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nidhi16/NodeJs_Session15_Assignment2/issues"
+  },
+  "homepage": "https://github.com/Nidhi16/NodeJs_Session15_Assignment2#readme",
+  "dependencies": {
+    "socket.io": "^2.0.4"
+  }
+}
